@@ -1,9 +1,7 @@
 import "../css/tournaments.css";
-
 function Tournaments() {
   return (
-    <main>
-         <section className="page-hero">
+    <main> <section className="page-hero">
       <h1>Tournament Arena</h1>
 
       <p>
@@ -21,7 +19,7 @@ function Tournaments() {
 
        <div className="tourn-card">
 
-    <img src="../images/Tournaments/lol-tournament.jpg" alt="League Spring Cup"/>
+    <img src="images/Tournaments/lol-tournament.jpg" alt="League Spring Cup"/>
 
     <div className="tourn-info">
 
@@ -56,7 +54,8 @@ function Tournaments() {
 
 </div>
     </section>
- 
+    
+
 <div className="tourn-viewer">
 
     <div className="tourn-popup">
@@ -84,7 +83,6 @@ function Tournaments() {
     </div>
 
 </div>
-
 
 <div className="register-popup">
 
@@ -150,8 +148,8 @@ function Tournaments() {
     </div>
 
 </div>
-</main>
+  </main> 
 
-    );
-}
+  );
+} 
 export default Tournaments;

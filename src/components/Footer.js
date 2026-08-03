@@ -1,19 +1,22 @@
+import { Link } from "react-router-dom";
+
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
         <h2>The Necropolis</h2>
+
         <p>Where Legends Never Rest.</p>
 
         <div className="footer-links">
-          <a href="index.html">Home</a>
+          <Link to="/">Home</Link>
 
-      <a href="updates.html">Updates</a>
+          <Link to="/updates">Updates</Link>
 
-      <a href="tournaments.html">Tournaments</a>
+          <Link to="/tournaments">Tournaments</Link>
 
-      <a href="news.html">News</a>
-    </div>
+          <Link to="/news">News</Link>
+        </div>
 
         <div className="footer-bottom">
           © 2026 The Necropolis Esports. All Rights Reserved.
