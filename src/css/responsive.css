@@ -1,0 +1,113 @@
+/* =========================================
+   TABLETS
+========================================= */
+
+@media (max-width: 992px) {
+  .nav-links {
+    gap: 20px;
+  }
+
+  .chronicles-container,
+  .games-container,
+  .team-container {
+    justify-content: center;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .tournament-container {
+    grid-template-columns: 1fr;
+  }
+}
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+
+    gap: 20px;
+
+    padding: 20px;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 15px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .chronicles-container {
+    grid-template-columns: 1fr;
+  }
+
+  .patch-container {
+    padding: 0 10px;
+  }
+
+  .about-container {
+    padding: 0 10px;
+  }
+
+  .team-container {
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .page-hero h1 {
+    font-size: 2rem;
+  }
+
+  .page-hero p {
+    font-size: 0.95rem;
+  }
+
+  .section-title h2 {
+    font-size: 2rem;
+  }
+
+  .team-card {
+    width: 100%;
+
+    max-width: 280px;
+  }
+
+  .chronicle-card {
+    width: 100%;
+  }
+
+  .patch-header {
+    font-size: 1rem;
+  }
+}

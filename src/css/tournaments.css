@@ -1,0 +1,358 @@
+/* Tournament Cards */
+
+.tourn-container {
+  max-width: 1200px;
+
+  margin: auto;
+
+  padding: 70px 20px;
+}
+.tourn-card {
+  background: #161616;
+
+  border-radius: 22px;
+
+  overflow: hidden;
+
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+
+  transition: 0.35s ease;
+}
+.tourn-card:hover {
+  transform: translateY(-10px);
+
+  box-shadow: 0 0 25px rgba(91, 255, 129, 0.35);
+}
+.tourn-card img {
+  width: 100%;
+
+  height: 240px;
+
+  object-fit: cover;
+
+  display: block;
+}
+.tourn-info {
+  padding: 25px;
+}
+.tourn-game {
+  display: inline-block;
+
+  background: #5bff81;
+
+  color: #111;
+
+  padding: 6px 14px;
+
+  border-radius: 30px;
+
+  font-weight: 700;
+
+  font-size: 0.8rem;
+
+  margin-bottom: 15px;
+}
+.tourn-info h3 {
+  font-size: 1.7rem;
+
+  margin-bottom: 15px;
+}
+.tourn-info p {
+  color: #bfbfbf;
+
+  line-height: 1.7;
+
+  margin-bottom: 25px;
+}
+.tourn-meta {
+  display: flex;
+
+  gap: 20px;
+
+  margin-bottom: 25px;
+
+  flex-wrap: wrap;
+}
+
+/* Tournament Buttons */
+
+.tourn-buttons {
+  display: flex;
+
+  gap: 15px;
+}
+.details-btn {
+  flex: 1;
+
+  padding: 12px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #2b2b2b;
+
+  color: white;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+.register-btn {
+  flex: 1;
+
+  padding: 12px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #5bff81;
+
+  color: #111;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+.details-btn:hover {
+  background: #3a3a3a;
+}
+.register-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 0 15px rgba(91, 255, 129, 0.5);
+}
+
+/* Tournament viewer */
+
+.tourn-viewer {
+  display: none;
+
+  position: fixed;
+
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.75);
+
+  justify-content: center;
+
+  align-items: center;
+
+  z-index: 9999;
+}
+.tourn-popup {
+  width: 90%;
+
+  max-width: 700px;
+
+  background: #181818;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  position: relative;
+
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.6);
+}
+.tourn-popup img {
+  width: 100%;
+
+  height: 300px;
+
+  object-fit: cover;
+}
+.tourn-popup h2 {
+  padding: 25px 25px 10px;
+}
+.popup-meta {
+  padding: 0 25px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 12px;
+
+  color: #ddd;
+}
+#popup-description {
+  padding: 25px;
+
+  line-height: 1.8;
+
+  color: #bdbdbd;
+}
+.close-tourn {
+  position: absolute;
+
+  top: 15px;
+
+  right: 20px;
+
+  font-size: 34px;
+
+  color: white;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+.close-tourn:hover {
+  color: #5bff81;
+}
+
+/* registration popup */
+
+.register-popup {
+  display: none;
+
+  position: fixed;
+
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.75);
+
+  justify-content: center;
+
+  align-items: center;
+
+  z-index: 9999;
+}
+.register-box {
+  width: 90%;
+
+  max-width: 520px;
+
+  background: #181818;
+
+  border-radius: 18px;
+
+  padding: 40px;
+
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.6);
+}
+.register-box h2 {
+  text-align: center;
+
+  margin-bottom: 30px;
+
+  color: #5bff81;
+
+  font-size: 2rem;
+}
+.register-box p {
+  color: #d0d0d0;
+
+  line-height: 1.7;
+
+  margin-bottom: 30px;
+}
+.close-register {
+  padding: 14px 28px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: #5bff81;
+
+  color: #111;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+.close-register:hover {
+  transform: translateY(-2px);
+}
+
+/* registration form */
+
+#register-form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+}
+#register-form label {
+  color: #dcdcdc;
+
+  font-weight: 600;
+}
+#team-name {
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #262626;
+
+  color: white;
+
+  font-size: 1rem;
+}
+#team-region {
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #262626;
+
+  color: white;
+
+  font-size: 1rem;
+}
+#team-name:focus,
+#team-region:focus {
+  outline: 2px solid #5bff81;
+}
+.coach-options {
+  display: flex;
+
+  gap: 25px;
+}
+.coach-options label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  cursor: pointer;
+}
+.submit-register {
+  margin-top: 15px;
+
+  padding: 15px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: #5bff81;
+
+  color: #111;
+
+  font-size: 1rem;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+.submit-register:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 0 18px rgba(91, 255, 129, 0.45);
+}

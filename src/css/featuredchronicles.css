@@ -1,0 +1,134 @@
+.chronicles {
+  padding: 100px 8%;
+
+  background-color: #0a0a0a;
+}
+
+/* Section Title */
+
+.section-title {
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  font-family: "Cinzel", serif;
+
+  font-size: 2.8rem;
+
+  text-transform: uppercase;
+
+  letter-spacing: 5px;
+}
+
+.section-title p {
+  color: #999;
+
+  margin-top: 15px;
+
+  font-size: 1.1rem;
+}
+
+/* Cards Container */
+
+.chronicles-container {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 30px;
+}
+
+/* Individual Card */
+
+.chronicle-card {
+  width: 350px;
+
+  background-color: #111;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  transition: 0.3s ease;
+
+  border: 1px solid #222;
+}
+
+/* Card Image */
+
+.chronicle-card img {
+  width: 100%;
+
+  height: 220px;
+
+  object-fit: cover;
+}
+
+/* Card Title */
+
+.chronicle-card h3 {
+  font-family: "Cinzel", serif;
+
+  font-size: 1.4rem;
+
+  margin: 25px 20px 10px;
+}
+
+/* Card Description */
+
+.chronicle-card p {
+  color: #aaa;
+
+  line-height: 1.6;
+
+  margin: 0 20px 25px;
+}
+
+/* Card Button */
+
+.chronicle-card a {
+  display: inline-block;
+
+  margin: 0 20px 25px;
+
+  padding: 12px 25px;
+
+  background-color: #5bff81;
+
+  color: #0a0a0a;
+
+  border-radius: 5px;
+
+  font-weight: 600;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+.chronicle-card:hover {
+  transform: translateY(-10px);
+
+  border-color: #5bff81;
+
+  box-shadow: 0 10px 35px rgba(91, 255, 129, 0.15);
+}
+
+.chronicle-card img {
+  transition: transform 0.4s ease;
+}
+
+.chronicle-card:hover img {
+  transform: scale(1.05);
+}
+
+.chronicle-card a {
+  transition: 0.3s ease;
+}
+
+.chronicle-card a:hover {
+  background-color: #7cff9b;
+
+  transform: translateY(-3px);
+}

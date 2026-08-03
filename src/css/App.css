@@ -1,0 +1,13 @@
+body {
+  background: #111;
+
+  color: green;
+
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+div {
+  text-align: center;
+
+  margin-top: 100px;
+}

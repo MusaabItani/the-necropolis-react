@@ -1,0 +1,72 @@
+/* Updates Page Styles */
+
+.patch-container {
+  max-width: 900px;
+
+  margin: 60px auto;
+
+  padding: 0 20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 25px;
+}
+.patch-card {
+  background: #181818;
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  margin-bottom: 20px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+.patch-header {
+  width: 100%;
+
+  background: #202020;
+
+  color: white;
+
+  border: none;
+
+  padding: 22px;
+
+  text-align: left;
+
+  font-size: 1.15rem;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+.patch-header:hover {
+  background: #2b2b2b;
+}
+.patch-content {
+  display: none;
+
+  padding: 25px;
+
+  color: #d6d6d6;
+
+  line-height: 1.8;
+}
+
+.patch-content.active {
+  display: block;
+}
+.patch-content ul {
+  padding-left: 20px;
+}
+.patch-content li {
+  margin-bottom: 12px;
+}
+.patch-content.active {
+  display: block;
+}
