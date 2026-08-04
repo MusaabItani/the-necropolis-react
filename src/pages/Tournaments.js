@@ -3,7 +3,7 @@ import "../css/tournaments.css";
 function Tournaments() {
   const [selectedTournament, setSelectedTournament] = useState(null);
   const [showRegister, setShowRegister] = useState(false);
-  const [registered, setRegistered] = useState(false);
+  const [registered, setRegistered] = useState([]);
   const [registrationSuccess, setRegistrationSuccess] = useState(false);
   const tournamentData = [
     {
@@ -87,10 +87,10 @@ function Tournaments() {
 
                     <button
                       className="register-btn"
-                      disabled={registered}
+                      disabled={registered.includes(0)}
                       onClick={() => setShowRegister(true)}
                     >
-                      {registered ? "✔ Registered" : "Register"}
+                      {registered.includes(0) ? "✔ Registered" : "Register"}
                     </button>
                   </div>
                 </div>
@@ -171,7 +171,7 @@ function Tournaments() {
                   onSubmit={(e) => {
                     e.preventDefault();
                     setRegistrationSuccess(true);
-                    setRegistered(true);
+                    setRegistered([...registered, 0]);
                   }}
                 >
                   <label>Team Name</label>
