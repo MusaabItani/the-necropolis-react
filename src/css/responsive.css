@@ -3,24 +3,29 @@
 ========================================= */
 
 @media (max-width: 992px) {
-  .nav-links {
-    gap: 20px;
+  nav {
+    padding: 18px 5%;
   }
 
-  .chronicles-container,
-  .games-container,
-  .team-container {
-    justify-content: center;
+  .nav-links {
+    gap: 18px;
   }
 
   .contact-container {
     grid-template-columns: 1fr;
   }
 
-  .tournament-container {
-    grid-template-columns: 1fr;
+  .team-container,
+  .chronicles-container,
+  .games-container {
+    justify-content: center;
+  }
+
+  .tourn-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
+
 /* =========================================
    MOBILE
 ========================================= */
@@ -28,54 +33,107 @@
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
-
-    gap: 20px;
-
-    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+    gap: 15px;
   }
 
   .logo {
     justify-content: center;
   }
 
+  .logo img {
+    width: 55px;
+  }
+
+  .logo-text h1 {
+    font-size: 1rem;
+  }
+
+  .logo-text p {
+    font-size: 0.7rem;
+  }
+
   .nav-links {
     flex-wrap: wrap;
-
     justify-content: center;
+    gap: 12px;
+  }
 
-    gap: 15px;
+  .nav-links li {
+    list-style: none;
+  }
+
+  section {
+    padding: 60px 20px;
+  }
+
+  .section-title h2 {
+    font-size: 2rem;
+  }
+
+  .hero-content {
+    width: 90%;
   }
 
   .hero h1 {
     font-size: 2.5rem;
+    line-height: 1.1;
   }
 
   .hero p {
     font-size: 1rem;
   }
 
-  .chronicles-container {
-    grid-template-columns: 1fr;
+  .chronicles-container,
+  .games-container,
+  .team-container,
+  .tourn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
   }
 
-  .patch-container {
-    padding: 0 10px;
+  .chronicle-card,
+  .game-card,
+  .team-card,
+  .tourn-card {
+    width: 100%;
+    max-width: 360px;
   }
 
+  .game-card {
+    text-align: center;
+  }
+
+  .game-card img {
+    margin-bottom: 20px;
+  }
+
+  .carousel {
+    width: 100%;
+  }
+
+  .carousel-slide {
+    width: 90%;
+  }
+
+  .patch-container,
   .about-container {
     padding: 0 10px;
-  }
-
-  .team-container {
-    flex-direction: column;
-
-    align-items: center;
   }
 
   .contact-container {
     grid-template-columns: 1fr;
   }
+
+  .tourn-buttons {
+    flex-direction: column;
+  }
 }
+
 /* =========================================
    SMALL PHONES
 ========================================= */
@@ -83,6 +141,10 @@
 @media (max-width: 480px) {
   .hero h1 {
     font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
   }
 
   .page-hero h1 {
@@ -94,20 +156,31 @@
   }
 
   .section-title h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
-  .team-card {
-    width: 100%;
-
-    max-width: 280px;
-  }
-
-  .chronicle-card {
-    width: 100%;
+  .chronicle-card,
+  .team-card,
+  .game-card,
+  .tourn-card {
+    max-width: 100%;
   }
 
   .patch-header {
     font-size: 1rem;
+  }
+
+  .tourn-popup,
+  .register-box {
+    width: 95%;
+    padding: 25px;
+  }
+
+  .tourn-popup img {
+    height: 200px;
+  }
+
+  .popup-meta {
+    grid-template-columns: 1fr;
   }
 }

@@ -10,7 +10,7 @@
 .tourn-card {
   background: #161616;
 
-  max-width: 380px;
+  width: 100%;
 
   border-radius: 22px;
 
@@ -400,4 +400,36 @@
   transform: translateY(-2px);
 
   box-shadow: 0 0 18px rgba(91, 255, 129, 0.45);
+}
+@media (max-width: 992px) {
+  .tourn-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .tourn-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tourn-buttons {
+    flex-direction: column;
+  }
+
+  .tourn-popup {
+    width: 95%;
+  }
+
+  .tourn-popup img {
+    height: 200px;
+  }
+
+  .popup-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .register-box {
+    width: 95%;
+    padding: 25px;
+  }
 }

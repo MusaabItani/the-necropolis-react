@@ -43,7 +43,8 @@
 /* Individual Card */
 
 .chronicle-card {
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
 
   background-color: #111;
 
@@ -89,7 +90,8 @@
 /* Card Button */
 
 .chronicle-card a {
-  display: inline-block;
+  display: block;
+  text-align: center;
 
   margin: 0 20px 25px;
 
@@ -131,4 +133,34 @@
   background-color: #7cff9b;
 
   transform: translateY(-3px);
+}
+/* Responsive Featured Chronicles */
+
+@media (max-width: 992px) {
+  .chronicles-container {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .chronicles {
+    padding: 60px 20px;
+  }
+
+  .chronicles-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .chronicle-card {
+    width: 100%;
+    max-width: 350px;
+  }
+  .chronicle-card img {
+    height: 190px;
+  }
+  .section-title h2 {
+    font-size: 2.2rem;
+  }
 }

@@ -149,3 +149,26 @@
 .tournaments .section-title h2 {
   color: #c9a227;
 }
+/* Responsive Featured Tournaments */
+
+@media (max-width: 992px) {
+  .tournament-container {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .tournaments {
+    padding: 70px 5%;
+  }
+
+  .tournament-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tournament-card {
+    width: 100%;
+    max-width: 350px;
+  }
+}

@@ -7,7 +7,7 @@
 /* Carousel Box */
 
 .carousel {
-  width: 60%;
+  width: min(90%, 1100px);
 
   margin: 0 auto;
 
@@ -74,7 +74,7 @@
 
   transform: translateY(-50%);
 
-  width: 45%;
+  width: min(45%, 500px);
 
   z-index: 2;
 }
@@ -190,4 +190,96 @@
 
 .next {
   right: 20px;
+}
+/* =========================================
+   TABLETS
+========================================= */
+
+@media (max-width: 992px) {
+  .carousel {
+    width: 90%;
+  }
+
+  .slide img {
+    height: 450px;
+  }
+
+  .slide-content {
+    left: 40px;
+    width: 60%;
+  }
+
+  .slide-content h3 {
+    font-size: 2.3rem;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+  .hall-of-legends {
+    padding: 60px 20px;
+  }
+
+  .carousel {
+    width: 100%;
+  }
+
+  .slide img {
+    height: 350px;
+  }
+
+  .slide::before {
+    background: rgba(0, 0, 0, 0.65);
+  }
+
+  .slide-content {
+    left: 25px;
+    right: 25px;
+    width: auto;
+    top: 50%;
+  }
+
+  .slide-content span {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+  }
+
+  .slide-content h3 {
+    font-size: 1.8rem;
+    margin-top: 10px;
+  }
+
+  .slide-content p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-top: 12px;
+  }
+
+  .carousel-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 20px;
+    opacity: 1;
+  }
+}
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 480px) {
+  .slide img {
+    height: 300px;
+  }
+
+  .slide-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .slide-content p {
+    display: none;
+  }
 }

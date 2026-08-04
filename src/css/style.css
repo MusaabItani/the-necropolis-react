@@ -71,9 +71,8 @@ nav {
 }
 .logo img {
   width: 90px;
-
-  height: 90px;
-
+  max-width: 100%;
+  height: auto;
   object-fit: contain;
 }
 
@@ -98,10 +97,11 @@ nav {
 .nav-links {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .nav-links a {
-  transition: 0.3s;
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
@@ -118,4 +118,30 @@ html {
   background: #5bff81;
 
   color: #0a0a0a;
+}
+
+.page-hero {
+  padding: 170px 8% 80px;
+
+  text-align: center;
+
+  background: #0d0d0d;
+}
+
+.page-hero h1 {
+  font-family: "Cinzel", serif;
+
+  font-size: 3rem;
+
+  margin-bottom: 20px;
+}
+
+.page-hero p {
+  max-width: 700px;
+
+  margin: auto;
+
+  color: #bbb;
+
+  line-height: 1.8;
 }

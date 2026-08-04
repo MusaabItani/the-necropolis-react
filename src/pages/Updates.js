@@ -40,7 +40,7 @@ function Updates() {
             className="patch-header"
             onClick={() => setOpenPatch(openPatch === 2 ? null : 2)}
           >
-            <span>{openPatch === 2 ? "▲" : "▼"} weapon balance</span>
+            <span>{openPatch === 2 ? "▲" : "▼"} Weapon Balance</span>
           </button>
 
           <div className={`patch-content ${openPatch === 2 ? "active" : ""}`}>
@@ -70,7 +70,7 @@ function Updates() {
             className="patch-header"
             onClick={() => setOpenPatch(openPatch === 3 ? null : 3)}
           >
-            <span>{openPatch === 3 ? "▲" : "▼"} bug fixes</span>
+            <span>{openPatch === 3 ? "▲" : "▼"} Bug Fixes</span>
           </button>
 
           <div className={`patch-content ${openPatch === 3 ? "active" : ""}`}>
