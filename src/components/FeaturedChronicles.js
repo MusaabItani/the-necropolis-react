@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../css/featuredchronicles.css";
 function FeaturedChronicles() {
   return (
@@ -19,7 +20,7 @@ function FeaturedChronicles() {
             where only one king remained standing.
           </p>
 
-          <a href="/">Enter the Chronicle</a>
+          <Link to="/news">Enter the Chronicle</Link>
         </div>
 
         <div className="chronicle-card">
@@ -32,11 +33,14 @@ function FeaturedChronicles() {
             where legends fought beneath the Ancient.
           </p>
 
-          <a href="#">Enter the Chronicle</a>
+          <Link to="/news">Enter the Chronicle</Link>
         </div>
 
         <div className="chronicle-card">
-          <img src="../images/Chronicles/abi.jpg" alt="Arena Breakout Infinite" />
+          <img
+            src="../images/Chronicles/abi.jpg"
+            alt="Arena Breakout Infinite"
+          />
 
           <h3>Into the Dark Zone</h3>
 
@@ -45,7 +49,7 @@ function FeaturedChronicles() {
             survival... or total loss.
           </p>
 
-          <a href="#">Enter the Chronicle</a>
+          <Link to="/news">Enter the Chronicle</Link>
         </div>
       </div>
     </section>

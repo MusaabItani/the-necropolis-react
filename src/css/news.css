@@ -1,33 +1,4 @@
 /* =========================================
-   NEWS PAGE
-========================================= */
-
-.page-hero {
-  padding: 90px 8% 60px;
-
-  text-align: center;
-
-  background: #0d0d0d;
-}
-
-.page-hero h1 {
-  font-family: "Cinzel", serif;
-
-  font-size: 3rem;
-
-  margin-bottom: 20px;
-}
-
-.page-hero p {
-  max-width: 700px;
-
-  margin: auto;
-
-  color: #bbb;
-
-  line-height: 1.8;
-}
-/* =========================================
    NEWS GRID
 ========================================= */
 
@@ -246,5 +217,30 @@
 
   to {
     transform: translateY(0);
+  }
+}
+/* =========================================
+   NEWS RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+  .chronicles-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .popup-content {
+    width: 95%;
+    padding: 25px;
+  }
+
+  .popup-content img {
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .popup-content h2 {
+    font-size: 1.5rem;
   }
 }
