@@ -1,70 +1,121 @@
-# Getting Started with Create React App
+# The Necropolis Esports
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Necropolis Esports is a modern React-based esports website created as a university frontend development project. The website features a dark fantasy theme inspired by necromancers and provides information about tournaments, game updates, featured chronicles, competitive games, and the organization itself.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Responsive modern interface
+- React component-based architecture
+- React Router navigation
+- Interactive Hall of Legends carousel
+- Tournament registration system
+- Tournament details popup
+- News filtering system
+- Chronicle article popup
+- Contact form
+- Mobile responsive design
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- React
+- JavaScript (ES6)
+- React Router DOM
+- HTML5
+- CSS3
+- Git & GitHub
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+src/
+ ├── components/
+ ├── pages/
+ ├── css/
+ ├── App.js
+ └── index.js
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+public/
+ └── images/
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+# Setup Instructions
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+git clone https://github.com/MusaabItani/the-necropolis-react
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Navigate to the project folder
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+cd the-necropolis-react
+```
 
-## Learn More
+3. Install dependencies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Start the development server
 
-### Code Splitting
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The application will run at:
 
-### Analyzing the Bundle Size
+```
+http://localhost:3000
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+# Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Home Page
 
-### Advanced Configuration
+![Home](./public/images/screenshots/home.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## Chronicles Page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![Chronicles](./public/images/screenshots/news.png)
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Tournament Page
+
+![Tournaments](./public/images/screenshots/tournaments.png)
+
+---
+
+## Contact Page
+
+![Contact](./public/images/screenshots/contact.png)
+
+---
+
+## About page
+
+![About](./public/images/screenshots/about.png)
+
+---
+
+# Author
+
+**Musaab Itani**
+
+Computer Science Student
+
+University Frontend Development Project
